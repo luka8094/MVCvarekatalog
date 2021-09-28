@@ -10,8 +10,9 @@ import java.util.Set;
 public class Product {
 
     @Id
+    @Column( nullable = false )
     @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column( nullable = false )
     String name;
@@ -27,7 +28,7 @@ public class Product {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

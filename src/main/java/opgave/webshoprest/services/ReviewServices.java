@@ -12,4 +12,7 @@ public class ReviewServices {
         this.reviewRepository = rr;
     }
 
+    public ReviewRepository getReviewRepository() {
+        return reviewRepository;
+    }
 }

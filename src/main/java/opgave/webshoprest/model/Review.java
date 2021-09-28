@@ -9,6 +9,7 @@ import javax.persistence.*;
 public class Review {
 
     @Id
+    @Column( nullable = false )
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private long id;
 
